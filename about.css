@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+.logo {
+    font-size: 33px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none; /* Remove underlines for WanderBuddy */
+}
+
+.logo:hover {
+    color: #fff; /* Optional: Adjust hover color */
+}
+
+span {
+    color: #112230;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 15px 22px;
+    transition: all 0.5s ease;
+    text-decoration: none; /* Remove underlines */
+}
+
+.navbar a:hover {
+    color: #112230;
+}
+
+.h-right a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none; /* Remove underlines for "Follow us" links */
+}
+
+.h-right a:hover {
+    color: #112230;
+}
+
+.h-right i {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none; /* Remove underlines for icons */
+}
+
+.h-right i:hover {
+    color: #112230;
+}
+
+.about {
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust background color transparency */
+    text-align: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+
+.container {
+    padding: 25px;
+}
+
+.container h1 {
+    font-size: 70px;
+    color: #112230;
+}
+
+.container p {
+    margin-top: 35px;
+    font-size: large;
+    line-height: 1.6; /* Adjust this value to increase or decrease line spacing */
+}

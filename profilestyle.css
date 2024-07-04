@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #ffa343;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #ff7a00;
+}
+
+.profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px;
+}
+
+.profile-card {
+    background: #333333; /* Light black */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ffa432; /* Box shadow with #ffa432 */
+    text-align: left;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.chat-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-btn:hover {
+    background-color: #3e8e41;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#send-btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-log {
+    padding: 10px;
+    overflow-y: auto;
+    height: 200px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+   .profiles-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns per row for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+   .profiles-grid {
+        grid-template-columns: 1fr; /* 1 column per row for very small screens */
+    }
+}

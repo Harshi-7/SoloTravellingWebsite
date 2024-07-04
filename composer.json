@@ -1,0 +1,18 @@
+{
+    "name": "harshitha/minorproject",
+    "description": "A real-time chat application using PHP and Ratchet",
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Harshitha\\Minorproject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Harshi-7",
+            "email": "harshithabharadi7104@gmail.com"
+        }
+    ]
+}

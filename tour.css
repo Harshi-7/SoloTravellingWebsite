@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card-item .placename {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-item {
+    color: #fff;
+    width: 300px;
+    padding: 35px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 10px rgba(255, 164, 50, 0.5);
+    margin: 15px;
+}
+
+.img1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffa432;
+    padding: 2px;
+}
+
+.card-item .famousfor {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0;
+}
+
+.card-item .guide {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    background: #ffa432;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.card-item .guide:hover {
+    background-color: #f7941b;
+}
